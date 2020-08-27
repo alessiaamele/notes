@@ -1,3 +1,6 @@
+// Purpose of a Service: Decide what to do with and how to use the databases that are accessed by the Repository
+// aka where the business logic resides
+
 package com.example.notes.service;
 
 import com.example.notes.domain.Note;
@@ -38,6 +41,9 @@ public class NoteService {
         return this.repo.findById(id).orElseThrow(NoteNotFoundException::new);
     }
 
+    // Functionality 4: Updating a previous record
+    // a bit complicated, look at the notes and ask questions - still okayish intuitive
+    // the save feature detects if there is an Id or not (if not it will store the entity as new object, if yes it will update it)
     public Note updateNote(Long id, Note note){
         Note update = findNoteById(id);
         update.setTitle(note.getTitle());
@@ -45,6 +51,8 @@ public class NoteService {
         return this.repo.save(update);
     }
 
+    // Functionality 5: Deleting a record
+    // Will return true if the record has been successfully deleted, false if it hasn't
     public Boolean deleteNoteById(Long id){
         if(!this.repo.existsById(id)){
             throw new NoteNotFoundException();

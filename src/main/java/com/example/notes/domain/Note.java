@@ -1,3 +1,6 @@
+// Purpose of Entities: create a database with a set number of tables which have fields, essentially combining
+// typical Java class and method language and SQL create principles
+
 package com.example.notes.domain;
 
 import javax.persistence.Column;

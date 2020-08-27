@@ -1,3 +1,5 @@
+// Purpose of the Repository: Convert the entities created in Java in SQL by using the JpaRepository extension
+// Similarly, retrieves info from SQL and translates them into Java
 
 package com.example.notes.repo;
 
