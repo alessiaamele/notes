@@ -20,6 +20,7 @@ public class NotesController {
         this.noteService = noteService;
     }
 
+    // This line will assign an URL which will be triggered by the browser and sets what it will return
     @GetMapping("/")
     public List<Note> getAllNotes() {
         return this.noteService.readAllNotes();
