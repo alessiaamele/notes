@@ -33,6 +33,7 @@ public class NoteService {
 
     // Functionality 3: Find Notes by Id <- returns an optional in case Id Not found, and here we generate the
     // NoteNotFoundException class in parallel which will display the message of our choice
+    // NB: findById (in-built function) returns an optional
     public Note findNoteById(Long id){
         return this.repo.findById(id).orElseThrow(NoteNotFoundException::new);
     }
