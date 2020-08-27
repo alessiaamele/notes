@@ -1,8 +1,8 @@
-package com.example.notes.NoteService;
+package com.example.notes.service;
 
-import com.qa.notes.domain.Note;
-import com.qa.notes.exceptions.NoteNotFoundException;
-import com.qa.notes.repo.NotesRepository;
+import com.example.notes.domain.Note;
+import com.example.notes.exceptions.NoteNotFoundException;
+import com.example.notes.repo.NotesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -2,6 +2,8 @@
 package com.example.notes.rest;
 
 
+import com.example.notes.domain.Note;
+import com.example.notes.service.NoteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
