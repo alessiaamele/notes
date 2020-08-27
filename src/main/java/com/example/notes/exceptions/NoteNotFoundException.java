@@ -1,3 +1,5 @@
+// Purpose of the Exception file: manually set error messages for different errors we can expect the user to encounter
+
 package com.example.notes.exceptions;
 
 
