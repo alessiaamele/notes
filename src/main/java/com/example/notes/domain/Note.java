@@ -28,26 +28,26 @@ public Note(){
     }
 
     public Long getId() {
-        return id;
+    return id;
     }
 
     public void setId(Long id) {
-        this.id = id;
+    this.id = id;
     }
 
     public String getTitle() {
-        return title;
+    return title;
     }
 
     public void setTitle(String title) {
-        this.title = title;
+    this.title = title;
     }
 
     public String getDescription() {
-        return description;
+    return description;
     }
 
     public void setDescription(String description) {
-        this.description = description;
+    this.description = description;
     }
 }
