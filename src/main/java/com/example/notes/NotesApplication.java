@@ -11,4 +11,7 @@ public class NotesApplication {
         SpringApplication.run(NotesApplication.class, args);
     }
 
+    @GetMapping("/")
+    oublic List<Note>
+
 }
