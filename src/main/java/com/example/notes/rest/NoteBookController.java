@@ -37,13 +37,13 @@ public class NoteBookController {
 
     // Delete an URL
     @DeleteMapping("/deleteNoteBook/{id}")
-    public Boolean deleteNote(@PathVariable Long id){
+    public Boolean deleteNoteBook(@PathVariable Long id){
         return this.noteBookService.deleteNoteBookById(id);
     }
 
     // Get specific note by Id
     @GetMapping("/getNoteBookById/{id}")
-    public NoteBook getNoteById(@PathVariable Long id){
+    public NoteBook getNoteBookById(@PathVariable Long id){
         return this.noteBookService.findNoteBookById(id);
     }
 
