@@ -26,7 +26,7 @@ public class NoteBookService {
     }
 
     // Functionality 2: Create Notes
-    public NoteBook createBook(NoteBook noteBook){
+    public NoteBook createNoteBook(NoteBook noteBook){
         return this.repo.save(noteBook);
     }
 
